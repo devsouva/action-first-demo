@@ -1,0 +1,11 @@
+name: First Action demo
+on: workflow_dispatch
+jobs: 
+  fisrt-job: 
+    runs-on: ubuntue-latest
+    steps:  
+      - name: printing greeting
+      - run: echo "Hello From Github action"
+
+      - name: printing good Bye
+      - run: echo "Good Bye :))))))"
