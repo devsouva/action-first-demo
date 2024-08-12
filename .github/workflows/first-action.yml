@@ -2,9 +2,7 @@ name: First Action demo
 on: workflow_dispatch
 jobs: 
   fisrt-job: 
-
     runs-on: ubuntu-latest
-
     steps:
       - name: print greeting
         run: echo "Hello From github action!"
@@ -12,6 +10,8 @@ jobs:
       - name: Bye greeting
         run: echo "Good bye !"
 
-      - name: printing date time
-        run: echo "Current Date and Time:" $(date)
+      - name: printing date time and current user
+        run:  | 
+          echo "Current Date and Time:" $(date)
+          echo "Current User: $(whoami)"
       
