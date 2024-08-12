@@ -9,4 +9,7 @@ jobs:
 
       - name: Bye greeting
         run: echo "Good bye !"
+        
+      - name: printing date time
+        run: echo "Current Date Time" + date
       
